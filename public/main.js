@@ -96,7 +96,7 @@ window.onload = () => {
             aVisit.href = "https://dev-lions.github.io/cosmiatria/";
         }
         if (counter == 2) {
-            aVisit.href = "https://carrito-app.herokuapp.com/";
+            aVisit.href = "https://lions-dev.github.io/carrito/";
         }
         if (counter == 3) {
             aVisit.href = "https://dev-lions.github.io/LaCampestre/";
