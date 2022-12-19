@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../public/imagenes/computer.png">
+    <meta name="author" content="Leonel Echeverria">
+    <meta name="description" content="▷Desarrollo web, utilizando las ultimas tecnologias para una estetica y funcionalidad optima con los leguajes JavaScript, 
+    HTML, CSS y PHP junto con los Frameworks JQuery y Bootstrap, 
+    además del manejo de SQL Server.">
+    <title>▷Software Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/e1ceb65b07.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="../public/style.css">
+</head>
+<body>
+    
+    <header>
+        <nav>
+            
+            <i id="icon-laptop" class="fas fa-laptop-code"></i>
+            <h1>Leonel Echeverria <br> Desarrollo Web</h1>
+            
+            <ul>
+                <li><a data-page="home" href="#home">Home</a></li>
+                <li><a data-page="project" href="#project">Projectos</a></li>
+                <li><a data-page="sobremi" href="#sobremi">Sobre Mi</a></li>
+                <li><a data-page="contact" href="#contact">Contacto</a></li>
+                <div class="bubble"></div>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section data-index="0" id="home" class="home">
+            <div class="home-section">
+        <h2>Software Developer</h2>
+        <h3>Utilizando las ultimas tecnologías del mercado, me dedico a la creación de sitios web,<br>
+            trabajando tanto la estética, como el funcionamiento interno, creando carritos de compras,<br> 
+             logins, bases de datos y todo tipo de funcionalidades del lado del servidor. </h3>
+        <div class="awesome">   
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3-alt"></i>
+            <i class="fab fa-js-square"></i>
+            <i class="fab fa-php"></i>
+            <i class="fab fa-python"></i>
+            <i class="fas fa-database"></i>
+            <i class="fab fa-bootstrap"></i>
+        </div> 
+            </div>
+        </section>
+
+
+        <section data-index="1" id="project" class="project">
+
+            <h4>Projectos:</h4>
+
+            <div class="carousel-container">
+
+                <button id="next"><i class="fas fa-arrow-right"></i></button>
+                <button id="prev"><i class="fas fa-arrow-left"></i></button>
+            
+                <div class="carousel-slide">
+                    <img src="../public/imagenes/imagen4.png" id="lastClone" alt="">
+                    <img src="../public/imagenes/imagen1.png" alt="">
+                    <img src="../public/imagenes/imagen2.png" alt="">
+                    <img src="../public/imagenes/imagen3.png" alt="">
+                    <img src="../public/imagenes/imagen4.png" alt="">
+                    <img src="../public/imagenes/imagen1.png" id="firstClone" alt="">
+                 
+                </div>
+            </div>
+
+            <button id="btn-visit"><a id="a-visit" href="">Visitar Pagina</a></button>
+        </section>
+
+        <section data-index="2"  id="sobremi"  class="sobremi">
+            
+            <h4 class="h4-sobremi-1">Sobre Mi:</h4>
+
+            <p id="p-mi">Hola, mi nombre es Leonel Echeverria, desarrollador web y estudiante de programación informática, con 5 años de experiencia en el desarrollo freelance. <br>
+                 Mi trabajo es darle a mis clientes herramientas para desarrollar de la mejor manera sus proyectos, tanto en apariencia como en funcionalidad.
+            </p>
+            <div class="awesome-redes"> 
+                <h4 class="h4-sobremi">Redes Sociales:</h4>
+            <a  href="https://www.linkedin.com/in/leonel-echeverria-a80a53207/"><i id="awesome-redes" class="fab fa-linkedin"></i></a>
+            <a  href="https://www.instagram.com/leonelecheverria97/?hl=es-la"><i id="awesome-redes" class="fab fa-instagram"></i></a>
+            </div>
+        </section>
+
+
+        <section data-index="3" id="contact" class="contact">
+            
+            <h4 class="contact4">Contacto:</h4>
+           
+            <form  id="formCorreo" role="form" class="formulario">
+
+            <div class="form-group">
+
+                <label for="nombre">Nombre :</label>
+                <input type="text" required="text" id="nombre" name="nombre" placeholder="Jack Grealish">
+
+            </div>
+            <div class="form-group">
+
+                <label for="email"> Email : </label>
+                <input type="email" id="email" name="email" required="email" placeholder="jackgrealish@gmail.com">
+                
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje :</label>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10" required="text"></textarea>
+                <button id="buttonSubmit" type="submit" form="formCorreo">Enviar correo</button>
+                <p id="respuesta"></p>
+           </div>
+            </form>
+
+            <div class="line"></div>
+            <p id="p-pie">Teléfono: 1121785417 - Email: leonelandresecheverria@gmail.com - © Leonel Echeverria</p>
+        </section>
+    </main>
+
+    
+    <!--<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    --><script src="../public/main.js"></script>
+    <script src="../public/fetch.js"></script>
+    
+
+</body>
+</html>
