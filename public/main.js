@@ -59,7 +59,6 @@ window.onload = () => {
         carouselSlide.style.transition = "transform 0.4s ease-in-out";
         counter++;
         carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-        console.log(counter);
     });
 
     prev.addEventListener("click", () => {
@@ -68,7 +67,6 @@ window.onload = () => {
         carouselSlide.style.transition = "transform 0.4s ease-in-out";
         counter--;
         carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-        console.log(counter);
     });
 
     carouselSlide.addEventListener("transitionend", () => {
@@ -89,23 +87,31 @@ window.onload = () => {
     /*boton vistar pagina*/
     const aVisit = document.querySelector("#a-visit");
     aVisit.addEventListener("click", () => {
-        if (counter == 0) {
-            aVisit.href = "https://dev-lions.github.io/programacion-web/";
-        }
-        if (counter == 1) {
-            aVisit.href = "https://dev-lions.github.io/cosmiatria/";
-        }
-        if (counter == 2) {
-            aVisit.href = "https://lions-dev.github.io/carrito/";
-        }
-        if (counter == 3) {
-            aVisit.href = "https://dev-lions.github.io/LaCampestre/";
-        }
-        if (counter == 4) {
-            aVisit.href = "https://dev-lions.github.io/programacion-web/";
-        }
-        else if (counter == 5) {
-            aVisit.href = "https://dev-lions.github.io/cosmiatria/";
+        switch (counter) {
+            case 0:
+                aVisit.href = "https://dev-lions.github.io/programacion-web/";
+                break
+            case 1:
+                aVisit.href = "https://dev-lions.github.io/cosmiatria/";
+                break
+            case 2:
+                aVisit.href = "https://lions-dev.github.io/Ecommerce/";
+                break
+            case 3:
+                aVisit.href = "https://lions-dev.github.io/carrito/";
+                break
+            case 4:
+                aVisit.href = "https://dev-lions.github.io/LaCampestre/";
+                break
+            case 5:
+                aVisit.href = "https://dev-lions.github.io/cosmiatria/";
+                break
+            case 6:
+                aVisit.href = "https://dev-lions.github.io/programacion-web/";
+                break
+            default:
+                aVisit.href = "https://lions-dev.github.io/";
+                break
         }
 
 
