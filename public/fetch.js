@@ -4,7 +4,7 @@ if(document.querySelector("#formCorreo")){
         let nombre = document.querySelector("#nombre").value
         let email = document.querySelector("#email").value
         let texto = document.querySelector("#mensaje").value
-        fetch("https://app-back-production-5304.up.railway.app/email", {
+        fetch("https://app-back.up.railway.app/email", {
             method: "POST",
             headers: {"Content-Type": "application/json"},
             body:JSON.stringify({'nombre': nombre,
